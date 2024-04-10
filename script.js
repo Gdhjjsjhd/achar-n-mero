@@ -25,25 +25,14 @@ function verificaNumeros() {
     if(numero > 100 || numero < 0){
         alert("Opição inválida! Difite de 0 à 100")
         return;
-    }else if( numero < numeroParaEncontrar){
+    }else if (numero > numeroParaEncontrar) {
+        tentativas++;
+        alert('O número é menor')
+    } else if(numero < numeroParaEncontrar){
         tentativas++;
         alert('O número é maior')
     } else{
-        alert('Parabens, você acertou em: ' + tentativas + 'tentativas!')
-        refresh()
-    } if(numero > numeroParaEncontrar){
-        tentativas++;
-        alert('O número é menor')
-    }else{
-        alert('Parabens, você acertou em: ' + tentativas + 'tentativas!')
-        refresh()
-    }if( numero = numeroParaEncontrar){
-        alert('Parabens, você acertou em: ' + tentativas + 'tentativas!')
+        alert('Parabéns, você acertou em: ' +  tentativas + 'Tentativas!🐱‍👤')
         refresh()
     }
-
-
-    
-
-
 }
